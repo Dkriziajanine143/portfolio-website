@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">My Portfolio</a>
+
+        <nav class="navbar">
+            <a href="home.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="hobbies.html">HOBBIES</a>
+            <a href="photo.html">PHOTO</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Krizia Janine F. Donceras</span></h1>
+            <h3>A BSIS 2A STUDENT</h3>
+            <br>
+            <h2><span class="text sec-text">Championing creativity for the digital age</span></h2>
+
+            <img src="Krizia.png" alt="" class="pic0">
+        
+        <div class="btn-box">
+            <a href="">Let's Talk</a>
+        </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.instagram.com/ms_jnndons//"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            <a href="https://web.facebook.com/krizia.janinedonceras"><i class='bx bxl-facebook-circle' style='color:#ffffff' ></i></a>
+            <a href="https://mail.google.com/mail/u/1/"><i class='bx bxl-gmail' style='color:#ffffff' ></i></a>
+        </div>
+
+
+        <span class="home-imgHover"></span>
+    </section>
+
+
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Championing creativity";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "for the digital age";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Championing creativity for the digital age";
+            }, 8000);
+        }
+
+        textLoad(); 
+    </script>
+    
+</body>
+</html>
